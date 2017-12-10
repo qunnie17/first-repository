@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>left section</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			white-space: nowrap;
+		}
+		.content{
+			width: 680px;
+			height: 569px;
+			position:relative;
+		}
+		.Calculate-Your-Payment{
+			font-family: Raleway;
+			font-size: 18px;
+			font-weight: bold;
+			line-height: 1.06;
+			text-align: justify;
+			color: #000000;
+			position: absolute;
+			top: 29px;
+			left: 30.5px;
+		}
+		.If-Your-Rate-Is-Over-4-Then-You-Need-To-Give-Us-A-Call {
+		  	width: 318px;
+		  	height: 11px;
+		  	font-family: Raleway;
+		  	font-size: 12px;
+		  	font-weight: 500;
+		  	line-height: 1.58;
+		  	text-align: justify;
+		  	color: #505759;
+		  	position:absolute;
+		  	left: 31px;
+		  	top:54.5px;
+		}
+		.Refinance-Calculator{
+			font-family: Raleway;
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 1.36;
+			text-align: justify;
+			color: #007681;
+			position: absolute;
+			top: 93px;
+			left: 31px;
+		}
+		.greenline{
+			width: 680px;
+			height: 1px;
+			background-color: #007681;
+			position: absolute;
+			top: 117px;
+			z-index: 1;
+		}
+		.left-middle{
+			width: 680px;
+  			height: 186px;
+  			background-color: #f4f8f8;
+  			position: relative;
+  			top: 117px;
+		}
+		.first-line{
+			font-family: Raleway;
+			font-size: 12px;
+			font-weight: bold;
+			color: #7e7e7e;
+			position: absolute;
+			top: 31.5px;
+			left: 49.5px;
+		}
+		.layer{
+			width: 58px;
+			height: 18px;
+			font-family: DIN;
+			font-size: 24px;
+			font-weight: bold;
+			line-height: 0.79;
+			text-align: justify;
+			color: #000000;
+			position: absolute;
+			top:56px;
+			left: 50px;
+		}
+		.doller{
+			width: 11px;
+			height: 21px;
+			font-family: DIN;
+			font-size: 22px;
+			font-weight: 300;
+			line-height: 0.86;
+			text-align: justify;
+			color: #000000;
+			
+		}
+		
+		.second-column{
+			position:absolute;
+			left: 310px;
+		}
+		
+		.third-column{
+			position: absolute;
+			left: 463.5px;
+		}
+		
+		.third-line{
+			width: 75px;
+			height: 12px;
+			font-family: Raleway;
+			font-size: 12px;
+			font-weight: bold;
+			line-height: 1.58;
+			text-align: justify;
+			color: #7e7e7e;
+			position: absolute;
+			top: 111.5px;
+			left: 49.5px;
+		}
+		div.buttongroup1{
+			position: absolute;
+			top: 136px;
+			left: 48px;
+		}
+		button.years{
+			width: 135px;
+			height: 30px;
+			border-radius: 15px;
+			border: solid 0.5px #cccccc;
+			background-color:transparent;
+			font-family: Raleway;
+			font-size: 11.9px;
+			font-weight: 500;
+			line-height: 1.58;
+			text-align: justify;
+			color: #7e7e7e;
+			text-align: center;
+			margin-right: 14px;
+			outline: none;
+		}
+		.number{
+			width: 17.5px;
+			line-height: 30px;
+			font-family: DIN;
+			font-size: 17.8px;
+			font-weight: bold;
+			line-height: 1.06;
+			text-align: justify;
+			color: #7e7e7e;
+		}
+		.left-bottom .first-line{
+			position: absolute;
+			top: 323.5px;
+			left: 50px;
+		}
+		
+		.left-bottom .third-line{
+			position: absolute;
+			top:404.5px;
+			left: 49.5px;
+		}
+		.left-bottom .layer{
+			position: absolute;
+			top: 348px;
+			left: 50px;
+		}
+		div.buttongroup2{
+			position: absolute;
+			top: 429px;
+			left: 48px;
+		}
+		.greyline-long{
+			width: 270px;
+			height: 1px;
+			background-color: #e5e5e5;
+			display: inline-block;
+			margin-right: 40px;
+			position: absolute;
+			top: 82px;
+			left: 50px;
+			
+		}
+		.greyline-short{
+			width: 115px;
+			height: 1px;
+			background-color: #e5e5e5;
+			margin-right: 40px;
+			position: absolute;
+			left: 360px;
+			top: 82px;
+		}
+		.greyline-short2{
+			width: 115px;
+			height: 1px;
+			background-color: #e5e5e5;
+			margin-right: 40px;
+			position: absolute;
+			left: 514px;
+			top: 82px;
+		}
+		button.active{
+			border: solid 0.5px #007580;
+			color:#007580;
+		}
+		.active .number{
+			color: #007680;
+		}
+		.left-bottom .greyline-long{
+			position: absolute;
+			left: 50px;
+			top: 374px;
+		}
+		.left-bottom .line2{
+			position: absolute;
+			left: 360px;
+			top:374px;
+		}
+		button.calculate{
+			width: 220px;
+			height: 40px;
+			border-radius: 20px;
+			border:none;
+			background-color: #007681;
+			font-family: Raleway;
+			font-size: 14px;
+			font-weight: bold;
+			color: #ffffff;
+			position: absolute;
+			top: 499px;
+			left: 409px;
+			text-align: center;
+			outline: none;
+		}
+	</style>
+</head>
+<body>
+<div class="content">	
+		<p class="Calculate-Your-Payment">Calculate Your Payment</p>
+		<p class="If-Your-Rate-Is-Over-4-Then-You-Need-To-Give-Us-A-Call">If Your Rate Is Over 4% You Need To Give Us A Call</p> 
+		<p class="Refinance-Calculator">Refinance Calculator</p>
+		<div class="greenline"></div>
+		<div class="left-middle">
+		
+			<div class="first-line">
+				<span>Original loan amount</span>
+				<span class="second-column">Interest rate</span>
+				<span class="third-column">Original year</span>
+				
+			</div>
+			<div class="layer">
+				<span><span class="doller">$</span>200,000</span>
+				<span class="second-column">4.125<span class="doller">%</span></span>
+				<span class="third-column">2014</span>
+			</div>
+			<div class="greyline-long"></div>
+			<div class="greyline-short"></div><div class="greyline-short2"></div>
+			<div class="third-line">Original term</div>
+			<div class="buttongroup1">
+				<button class="years"><span class="number">10</span> years</button>
+				<button class="years"><span class="number">15</span> years</button>
+				<button class="years"><span class="number">20</span> years</button>
+				<button class="years active"><span class="number">30</span> years</button>
+			</div>
+		</div>
+
+		<div class="left-bottom">
+		
+			<div class="first-line">
+				<span>New loan amount</span>
+				<span class="second-column">New interest rate</span>
+				
+			</div>
+			<div class="layer">
+				<span><span class="doller">$</span>200,000</span>
+				<span class="second-column">4.2<span class="doller">%</span></span>
+			</div>
+			<div class="greyline-long"></div><div class="greyline-long line2"></div>
+			<div class="third-line">Original term</div>
+			<div class="buttongroup2">
+				<button class="years"><span class="number">10</span> years</button>
+				<button class="years"><span class="number">15</span> years</button>
+				<button class="years"><span class="number">20</span> years</span>
+				<button class="years active"><span class="number">30</span> years</button>
+			</div>
+	</div>
+	<button class="calculate">CALCULATE</button>
+	
+</div>		
+</body>
+</html>
