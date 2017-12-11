@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3-3left</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			white-space: nowrap;
+		}
+		.content{
+			width: 680px;
+  			height: 512px;
+  			background-color: #ffffff;
+  			position: relative;
+		}
+		.Calculate-Your-Payment{
+			font-family: Raleway;
+			font-size: 18px;
+			font-weight: bold;
+			text-align: justify;
+			color: #000000;
+			position: absolute;
+			top: 29px;
+			left: 30.5px;
+		}
+		.If-Your-Rate-Is-Over-4-Then-You-Need-To-Give-Us-A-Call {
+			width: 318px;
+			height: 11px;
+		  	font-family: Raleway;
+		  	font-size: 12px;
+		  	font-weight: 500;
+		  	text-align: justify;
+		  	color: #505759;
+		  	position: absolute;
+		  	left: 31px;
+		  	top:54.5px;
+		}
+		.arrow{
+			height: 0px;
+			width: 0px;
+			border-top: 6px solid transparent;
+			border-bottom: 7px solid transparent;
+			border-right: 7px solid #000000;
+			border-left: 7px solid transparent;
+			position: absolute;
+			top: 93px;
+			left: 31px;
+		}
+		.circle{
+			width: 25px;
+			height: 25px;
+			border:solid 0.5px #cccccc;
+			border-radius: 12.5px;
+			position: absolute;
+			top: 86px;
+			left: 30px;
+		}
+		.triangle{
+			height: 0px;
+			width: 0px;
+			border-top: 5px solid transparent;
+			border-bottom: 4px solid transparent;
+			border-right: 4px solid #ffffff;
+			border-left: 4px solid transparent;
+			position: absolute;
+			top: 95px;
+			left: 37px;
+		}
+		.MortgagePayment{
+			font-family: Raleway;
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 1.36;
+			text-align: justify;
+			color: #007681;
+			position: absolute;
+			top: 93.5px;
+			left:276.5px;
+		}
+		.largenumber{
+			font-family: DIN;
+			font-size: 45px;
+			font-weight: bold;
+			line-height: 0.42;
+			text-align: justify;
+			color: #00dfc0;
+			position: absolute;
+			top: 129px;
+			left: 260px;
+		}
+		.largenumber span{
+			font-size: 40px;
+			font-weight: 300;
+			line-height: 0.48;
+		}
+		.discription{
+			font-family: Raleway;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 1.58;
+			text-align: justify;
+			color: #bbbbbb;
+		}
+		.centerdiscription{
+			text-align: center;
+			position: absolute;
+			left: 295px;
+			top: 175.5px;
+		}
+		.pricebar{
+			width: 680px;
+			height: 70px;
+			background-color: #fafcfc;
+			position: absolute;
+			top: 216px;
+		}
+		.pricebarblock{
+			height: 68px;
+			width: 226px;
+			border-right: 1px solid #eeeeee;
+			border-top: 1px solid #eeeeee;
+			border-bottom: 1px solid #eeeeee;
+			display: inline-block;
+			position: absolute;
+			text-align: center;
+		}
+		.block2{
+			position: absolute;
+			left:227px;
+		}
+		.block3{
+			position: absolute;
+			left: 453px;
+			border-right: none;
+		}
+		.price{
+			font-family: DIN;
+			font-size: 18px;
+			font-weight: bold;
+			line-height: 1.06;
+			text-align: justify;
+			color: #000000;
+			position: relative;
+			top: 19px;
+		}
+		
+		.price span{
+			font-family: DIN;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 1.06;
+			text-align: justify;
+			color: #000000;
+		}
+		span.months{
+			font-family: Raleway;
+			font-size: 12px;
+			line-height: 1.58;
+			text-align: center;
+			color: #000000;
+		}
+		.pricebarblock .discription{
+			position:relative;
+			top: 14.5px;
+		}
+
+
+		/*被覆盖部分*/
+		.priceblock{
+			width: 200px;
+			height: 189px;
+			border-radius: 3px;
+			background-color: #ffffff;
+			border: solid 0.5px #eeeeee;
+			display: inline-block;
+			position: relative;
+			top:306px;
+			left: 27px;
+			margin-right: 8px;
+		}
+		.priceblock div.Lifetimesavings{
+			height: 74px;
+			width: 200px;
+			background-color: #00dfc0;
+			text-align: center;
+			position: relative;
+			border-radius: 3px 3px 0px 0px;
+			z-index: 1;
+
+		}
+		.middlenumber{
+			font-family: DIN;
+			font-size: 29.9px;
+			font-weight: bold;
+			line-height: 0.63;
+			text-align: center;
+			color: #ffffff;
+			position: relative;
+			top: 17px;
+		}
+		.middlenumber span{
+			font-family: DIN;
+			font-size: 25.9px;
+			font-weight: 300;
+			line-height: 0.73;
+			text-align: justify;
+			color: #ffffff;
+		}
+		p.Lifetimesavings{
+			position: relative;
+			top: 27.5px;
+			font-family: Raleway;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 1.58;
+			color: #ffffff;
+		}
+		.leftblock{
+			display: inline-block;
+			width: 100px;
+			height: 36px;
+			border-right: 1px solid #e2e2e2;
+			position: relative;
+			top: 17px;
+		}
+		.leftblock .price{
+			position:relative;
+			top: 0px;
+			left: 24.5px;
+		}
+		.rightblock{
+			display: inline-block;
+			width: 98px;
+			height: 36px;
+			position: relative;
+			top: 17px;
+		}
+		.rightblock .price{
+			position: relative;
+			top:0px;
+			left: 21px;
+		}
+		.leftblock .discription{
+			position: relative;
+			left: 18px;
+		}
+		.rightblock .discription{
+			position: relative;
+			left: 3px;
+		}
+		.Interested{
+			outline: none;
+			width: 130px;
+			height: 30px;
+			border-radius: 15px;
+			background-color:#00dfc0;
+			border:none;
+			position: absolute;
+			top: 144px;
+			left: 35px;
+			z-index: 1;
+			font-family: Raleway;
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 1.36;
+			text-align: justify;
+			color: #ffffff;
+			letter-spacing:-0.6px;
+			text-align: center;
+		}
+		/*半透明部分*/
+		div.covering{
+			width: 680px;
+			height: 226px;
+			opacity: 0.75;
+			background-color: #000000;
+			position: relative;
+			top: 0px;
+			z-index: 1;
+
+		}
+	
+		.transparent-div{
+			width: 680px;
+			height: 226px; 
+			position: absolute;
+			top:286px;
+			left: 0px;	
+			z-index: 2;
+			overflow: hidden;
+		}
+		.transparent-div h3,p,div,button{
+			z-index: 2;
+		}
+		h3{
+			z-index: 2;
+			font-family: Raleway;
+			font-size: 18px;
+			font-weight: bold;
+			line-height: 1.06;
+			text-align: justify;
+			color: #00dfc0;
+			position: absolute;
+			top: 31px;
+			left: 28.5px;
+		}
+		.smith{
+			font-family: Raleway;
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 1.36;
+			text-align: justify;
+			color: #fefefe;
+			position: absolute;
+			top: 84px;
+			left: 29.5px;
+		}
+		.line-short{
+			width: 140px;
+			height: 1px;
+			background-color: #e5e5e5;
+		}
+		.short1{
+			position:absolute;
+			top: 102px;
+			left: 30px;
+		}
+		.short2{
+			position: absolute;
+			top: 102px;
+			left: 190px;
+		}
+		.bottom-part{
+			position: absolute;
+			top: 128px;
+			left: 29.5px;
+		}
+		.bottom-part p{
+			font-family: Raleway;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 1.36;
+			text-align: justify;
+			color: #bbbbbb;
+		}
+		.line{
+			width: 300px;
+			height: 1px;
+			background-color: #e5e5e5;
+			margin-bottom: 24px;
+
+		}
+		.get-offers{
+			width: 190px;
+			height: 30px;
+			border-radius: 15px;
+			background-color: #00dfc0;
+			font-family: Raleway;
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 1.36;
+			text-align: justify;
+			color: #ffffff;
+			outline: none;
+			border:none;
+			position: absolute;
+			top: 160px;
+			left: 460px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">	
+		<p class="Calculate-Your-Payment">Calculate Your Payment</p>
+		<p class="If-Your-Rate-Is-Over-4-Then-You-Need-To-Give-Us-A-Call">If Your Rate Is Over 4% You Need To Give Us A Call</p> 
+	
+		<div class="arrow"></div><div class="triangle"></div>
+		<div class="circle"></div>
+		<p class="MortgagePayment">Mortgage Payment</p>
+		<p class="largenumber"><span>$</span>72,090</p>
+		<p class="centerdiscription discription">Lifetime savings</p>
+		<div class="pricebar">
+			<p class="pricebarblock">
+				<span class="price"><span>$</span>485</span><br>
+				<span class="discription">Monthly savings</span>
+				<div class="greyline"></div>
+			</p>
+		
+			<p class="pricebarblock block2">
+				<span class="price"><span>$</span>969</span><br>
+				<span class="discription">New payment</span>
+			</p>
+
+			<p class="pricebarblock block3">
+				<span class="price">17<span class="months">months</span></span><br>
+				<span class="discription">Break even</span>
+			</p>	
+		</div>
+
+
+
+
+		<!--该部分被覆盖-->
+		<div>
+			<div class="priceblock">
+				<div class="Lifetimesavings">
+					<p class="middlenumber"><span>$</span>899</p>
+					<p class="Lifetimesavings">Lifetime savings</p>
+				</div>
+				
+				<div class="rateandfees">
+					<div class="leftblock">
+						<p class="price">3.799<span>%</span></p>
+						<p class="discription">Interest rate</p>
+					</div>
+					<div class="rightblock">
+						<p class="price"><span>$</span>5000</p>
+						<p class="discription">Refinance fees</p>
+					</div>
+				</div>
+				<button class="Interested">I’M INTERESTED</button>
+			</div>
+			
+			<div class="priceblock">
+				<div class="Lifetimesavings">
+					<p class="middlenumber"><span>$</span>899</p>
+					<p class="Lifetimesavings">Lifetime savings</p>
+				</div>
+					
+				<div class="rateandfees">
+					<div class="leftblock">
+						<p class="price">3.799<span>%</span></p>
+						<p class="discription">Interest rate</p>
+					</div>
+					<div class="rightblock">
+						<p class="price"><span>$</span>5000</p>
+						<p class="discription">Refinance fees</p>
+					</div>									
+				</div>
+				<button class="Interested">I’M INTERESTED</button>
+			</div>
+
+			<div class="priceblock">
+				<div class="Lifetimesavings">
+					<p class="middlenumber"><span>$</span>899</p>
+					<p class="Lifetimesavings">Lifetime savings</p>
+				</div>
+					
+				<div class="rateandfees">
+					<div class="leftblock">
+						<p class="price">3.799<span>%</span></p>
+						<p class="discription">Interest rate</p>
+					</div>
+					<div class="rightblock">
+						<p class="price"><span>$</span>5000</p>
+						<p class="discription">Refinance fees</p>
+					</div>									
+				</div>
+				<button class="Interested">I’M INTERESTED</button>
+			</div>
+		</div>
+
+		<!--该部分半透明-->
+		<div class="background"></div>
+		<div class="transparent-div">
+			<div class="covering"></div>
+			<h3>We Can Offer You More Options!</h3>
+			<p class="smith">Smith</p>
+			<div class="line-short short1"></div><div class="line-short short2"></div>
+			<div class="bottom-part">
+				<div class="imformationblock">
+					<p class="enter">Enter your E-mail</p>
+					<p class="line"></p>
+				</div>
+				<div class="imformationblock">
+					<p class="enter">Enter your phone number</p>
+					<p class="line"></p>
+				</div>
+			</div>
+			<button class="get-offers">GET OFFERS !</button>
+		</div>
+</body>
+</html>

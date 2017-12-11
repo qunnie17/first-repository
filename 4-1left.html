@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4-1left section</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			white-space: nowrap;
+		}
+		.content{
+			width: 680px;
+			height: 569px;
+			position:relative;
+			background-color: #ffffff;
+		}
+		.Calculate-Your-Payment{
+			font-family: Raleway;
+			font-size: 18px;
+			font-weight: bold;
+			line-height: 1.06;
+			text-align: justify;
+			color: #000000;
+			position: absolute;
+			top: 29px;
+			left: 30.5px;
+		}
+		.If-Your-Rate-Is-Over-4-Then-You-Need-To-Give-Us-A-Call {
+		  	width: 318px;
+		  	height: 11px;
+		  	font-family: Raleway;
+		  	font-size: 12px;
+		  	font-weight: 500;
+		  	line-height: 1.58;
+		  	text-align: justify;
+		  	color: #505759;
+		  	position:absolute;
+		  	left: 31px;
+		  	top:54.5px;
+		}
+		.Refinance-Calculator{
+			font-family: Raleway;
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 1.36;
+			text-align: justify;
+			color: #007681;
+			position: absolute;
+			top: 93px;
+			left: 31px;
+		}
+		.greenline{
+			width: 680px;
+			height: 1px;
+			background-color: #007681;
+			position: absolute;
+			top: 117px;
+			z-index: 1;
+		}
+		.calculateblock{
+			width:360px;
+			height: 133px;
+			position: relative;
+			top: 114px;
+		}
+		.cclblock{
+			width: 310px;
+			height: 51px;
+			position: relative;
+			left: 49px;
+			display: inline-block;
+			margin-top: 31px;
+		}
+		.cclblock .title{
+			font-family: Raleway;
+			font-size: 12px;
+			font-weight: bold;
+			line-height: 1.58;
+			text-align: justify;
+			color: #7e7e7e;
+		}
+		.cclblock .number{
+			font-family: DIN;
+			font-size: 24px;
+			font-weight: bold;
+			line-height: 0.79;
+			text-align: justify;
+			color: #000000;
+			position: relative;
+			top: 15px;
+		}
+		.greyline-long{
+			width: 270px;
+			height: 1px;
+			background-color: #e5e5e5;
+			position:absolute;
+			top: 57px;
+		}
+		.character{
+			width: 16px;
+			line-height: 16px;
+			background-color: #00dfc0;
+			text-align: center;
+			border-radius: 8px;
+			color: #ffffff;
+			font-size: 10px;
+		}
+		.ch1{
+			position: absolute;
+			top: 0px;
+			left: 102px;
+		}
+		.buttongroup{
+			height: 54px;
+			width: 584px;
+			position: absolute;
+			top: 313px;
+			left: 50px;
+		}
+		p.years{
+			font-family: Raleway;
+			font-size: 12px;
+			font-weight: bold;
+			line-height: 1.58;
+			text-align: justify;
+			color: #7e7e7e;
+			position: relative;
+			top: 0px;
+		}
+		button.years{
+			width: 135px;
+			height: 30px;
+			border-radius: 15px;
+			border: solid 0.5px #cccccc;
+			background-color:transparent;
+			font-family: Raleway;
+			font-size: 11.9px;
+			font-weight: 500;
+			line-height: 1.58;
+			text-align: justify;
+			color: #7e7e7e;
+			text-align: center;
+			margin-right: 14px;
+			outline: none;
+		}
+		button.active{
+			border: solid 0.5px #007580;
+			color:#007580;
+		}
+		.active .number{
+			color: #007680;
+		}
+		.block2{
+			position: absolute;
+			top: 367.5px;
+		}
+		.ch2{
+			position: absolute;
+			top: 0px;
+			left: 109px;
+		}
+		button.calculate{
+			width: 220px;
+			height: 40px;
+			border-radius: 20px;
+			border:none;
+			background-color: #007681;
+			font-family: Raleway;
+			font-size: 14px;
+			font-weight: bold;
+			color: #ffffff;
+			position: absolute;
+			top: 498px;
+			left: 420px;
+			text-align: center;
+			outline: none;
+		}
+
+	</style>
+</head>
+<body>
+<div class="content">	
+		<p class="Calculate-Your-Payment">Calculate Your Payment</p>
+		<p class="If-Your-Rate-Is-Over-4-Then-You-Need-To-Give-Us-A-Call">If Your Rate Is Over 4% You Need To Give Us A Call</p> 
+		<p class="Refinance-Calculator">Refinance Calculator</p>
+		<div class="greenline"></div>
+		<div class="calculateblock">
+			<div class="cclblock">
+				<p class="title">Annual income</p>
+				<p class="number"><span>$</span>50,000</p>
+				<div class="greyline-long"></div>	
+			</div>
+			<div class="cclblock">
+				<p class="title">My current monthly debts</p>
+				<p class="number"><span>$</span>0</p>
+				<div class="greyline-long"></div>	
+			</div>
+			<br>
+			<div class="cclblock">
+				<p class="title">Down payment</p>
+				<p class="number"><span>$</span>200,000</p>
+				<div class="greyline-long"></div>	
+			</div>
+			<div class="cclblock">
+				<p class="title">Debt-to-income</p>
+				<p class="number">36<span>%</span></p><div class="character ch1">?</div>
+				<div class="greyline-long"></div>	
+			</div>
+		</div>
+		
+			
+			<div class="buttongroup">
+				<p class="years">Loan term</p>
+				<button class="years"><span class="number">10</span> years</button>
+				<button class="years"><span class="number">15</span> years</button>
+				<button class="years"><span class="number">20</span> years</span>
+				<button class="years active"><span class="number">30</span> years</button>
+			</div>
+
+			<div class="cclblock block2">
+				<p class="title">New interest rate</p>
+				<p class="number">4.125<span>%</span></p><div class="character ch2">?</div>
+				<div class="greyline-long"></div>	
+			</div>
+
+	<button class="calculate">CALCULATE</button>
+	
+</div>		
+</body>
+</html>
